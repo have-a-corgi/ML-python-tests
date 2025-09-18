@@ -28,4 +28,4 @@ class Perceptron:
         return self
 
     def predict(self, X):
-        np.where(self.net_result(X) >= 0, 1, 0)
+        return np.where(self.net_result(X) >= 0, 1, 0)
